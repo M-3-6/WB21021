@@ -1,12 +1,173 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .container {
-    position: relative;
-    text-align: center;
-    color: black;
-  }
-  
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+}
+
+.heroSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("idukki.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: 0 -8rem;
+}
+
+.title h4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 3.1rem;
+  margin-bottom: 0.1rem;
+}
+.title h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 6rem;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+.title h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.title {
+  color: rgb(177, 177, 177);
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+
+.intro {
+  position: relative;
+  width: 70%;
+  margin: 4rem auto;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-left: 8rem;
+  font-family: "Nunito", san-serif;
+}
+
+.heading {
+  text-shadow: 2px 1px 3px black;
+  color: rgb(39, 39, 39);
+  position: absolute;
+  top: 5.3rem;
+  left: -5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+
+.attraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attraction-head {
+  font-size: 2rem;
+}
+
+.tile1,
+.tile2,
+.tile3 {
+  width: 60%;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.munnar,
+.anamudi,
+.eravikulam {
+  background: rgb(198, 255, 207);
+  background: linear-gradient(
+    360deg,
+    rgba(198, 255, 207, 1) 0%,
+    rgba(172, 255, 186, 1) 52%,
+    rgba(102, 200, 121, 1) 100%
+  );
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  box-shadow: 1px 2px 5px black;
+}
+
+.munnar-head,
+.anamudi-head,
+.eravikulam-head {
+  margin: 0;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.munnar p,
+.anamudi p,
+.eravikulam p {
+  width: 60%;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.munnar-image,
+.anamudi-image,
+.eravikulam-image {
+  position: absolute;
+  background-image: url("anamudi.jpg");
+  width: 200px;
+  height: 230px;
+  z-index: 2;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 3px black;
+  transition: 0.5s ease;
+}
+
+.eravikulam-image {
+  left: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.eravikulam,
+.eravikulam p {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.munnar-image:hover,
+.anamudi-image:hover,
+.eravikulam-image:hover {
+  transform: translateY(-1rem);
+}
