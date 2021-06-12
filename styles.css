@@ -416,7 +416,7 @@ hr {
   margin-top: 3rem;
   color: white;
   text-decoration: none;
-  background-color: transparent;
+  /* background-color: transparent; */
   text-align: center;
 }
 
