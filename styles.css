@@ -135,6 +135,23 @@ hr {
   color: white;
 }
 
+.photo-gallery {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(12, 12, 12);
+}
+
+.photo-gallery h1 {
+  margin: 0;
+  color: white;
+  padding: 1rem;
+}
+
+.collage {
+  width: 700px;
+  margin: 0 auto;
+}
+
 .tile1,
 .tile2,
 .tile3 {
