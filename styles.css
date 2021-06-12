@@ -14,6 +14,7 @@ hr {
   margin: 3rem;
 }
 
+
 .navbar {
   width: 100%;
   height: 9vh;
@@ -36,6 +37,11 @@ hr {
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+}
+.navbar-items:hover{
+  color: rgb(247, 238, 238);
 }
 
 .container {
@@ -98,6 +104,7 @@ hr {
   width: 70%;
   margin: 4rem auto;
   margin-top: 4rem;
+  height: 300px;
 }
 
 .intro p {
@@ -186,7 +193,6 @@ hr {
 .anamudi-image,
 .eravikulam-image {
   position: absolute;
-  background-image: url("anamudi.jpg");
   width: 200px;
   height: 230px;
   z-index: 2;
@@ -197,7 +203,21 @@ hr {
   transition: 0.3s ease;
 }
 
+.munnar-image{
+  background-image: url("munnar.jpg");
+  object-fit: cover;
+  background-size: cover;
+}
+.anamudi-image{
+  background-image: url("anamudi.jpg");
+  object-fit: cover;
+  background-size: cover;
+}
+
 .eravikulam-image {
+  background-image: url("eravikulam.jpg");
+  object-fit: cover;
+  background-size: cover;
   left: 1.5rem;
   bottom: 1.5rem;
 }
@@ -367,4 +387,12 @@ hr {
   height: 3rem;
   font-size: large;
   margin-top: 3rem;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.more:hover{
+  color: antiquewhite;
 }

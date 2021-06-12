@@ -160,6 +160,7 @@ hr{
   .flip-card-front {
     background-color: #bbb;
     color: black;
+    object-fit: cover;
   }
   
   .flip-card-back {
