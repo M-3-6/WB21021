@@ -14,7 +14,6 @@ hr {
   margin: 3rem;
 }
 
-
 .navbar {
   width: 100%;
   height: 9vh;
@@ -40,8 +39,12 @@ hr {
   color: rgb(211, 211, 211);
   text-decoration: none;
 }
-.navbar-items:hover{
+.navbar-items:hover {
   color: rgb(247, 238, 238);
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
 }
 
 .container {
@@ -220,12 +223,12 @@ hr {
   transition: 0.3s ease;
 }
 
-.munnar-image{
+.munnar-image {
   background-image: url("munnar.jpg");
   object-fit: cover;
   background-size: cover;
 }
-.anamudi-image{
+.anamudi-image {
   background-image: url("anamudi.jpg");
   object-fit: cover;
   background-size: cover;
@@ -406,20 +409,30 @@ hr {
 .more {
   display: block;
   margin: 1rem auto;
-  background-color: rgb(50, 148, 119);
+  background: transparent;
   outline: none;
   border: none;
   border-radius: 10rem;
   width: 7rem;
   height: 3rem;
   font-size: large;
-  margin-top: 3rem;
-  color: white;
+  margin: 0;
+  margin-top: 8px;
   text-decoration: none;
   background-color: transparent;
   text-align: center;
 }
+button {
+  height: 3rem;
+  border-radius: 1rem;
+  outline: none;
+  background-color: rgb(50, 148, 119);
+  border: none;
+}
 
-.more:hover{
+button a {
+  color: white;
+}
+.more:hover {
   color: antiquewhite;
 }
