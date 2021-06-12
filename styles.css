@@ -419,7 +419,7 @@ hr {
   margin: 0;
   margin-top: 8px;
   text-decoration: none;
-  background-color: transparent;
+  /* background-color: transparent; */
   text-align: center;
 }
 button {
