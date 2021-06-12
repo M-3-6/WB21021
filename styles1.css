@@ -1,130 +1,168 @@
-body,html{
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 0.9rem;
 }
 .container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mountain.jpg");
-    text-align: center;
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: 0;
-    padding: 0;
-  }
-  .container-package {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mountain1.jpg");
-    text-align: center;
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: 0;
-    padding: 0;
-  }
-  .container-homestay {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("homestay.jpg");
-    text-align: center;
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: 0;
-    padding: 0;
-  }
-  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("mountain.jpg");
+  text-align: center;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: fixed;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(211, 211, 211);
+  z-index: 3;
+}
+
+.navbar-items {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.container-package {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("mountain1.jpg");
+  text-align: center;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.container-homestay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("homestay.jpg");
+  text-align: center;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
-    opacity: 70%;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  opacity: 70%;
+}
 
-  .centered-homestay {
-    position: absolute;
-    top: 80%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    color: white;
-    /* font-size: 3rem;
+.centered-homestay {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* font-size: 3rem;
     font-weight: bold; */
-    font-family: 'Roboto', sans-serif;
-    /* opacity: 70%; */
-    line-height: 1px;
-    /* letter-spacing: 2px; */
-  }
-
-.flex{
-      display: flex;
-      justify-content: space-evenly;
-      margin: 2rem;
-  }
-.flex-column{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin: 5rem;
+  font-family: "Roboto", sans-serif;
+  /* opacity: 70%; */
+  line-height: 1px;
+  /* letter-spacing: 2px; */
 }
 
-.text{
-    padding: 2rem;
-    width: 50%;
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
 }
-.image,.package-text{
-    padding: 2rem;
-}
-
-.text-left{
-    text-align: left;
-}
-.text-right{
-    text-align: right;
+.flex-column {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 5rem;
 }
 
-.tour-image{
-    height: 300px;
-    width: 500px;
+.text {
+  padding: 2rem;
+  width: 50%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.image,
+.package-text {
+  padding: 2rem;
 }
 
-.package-p{
-    color: red;
+.text-left {
+  text-align: left;
 }
-.package-image{
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
+.text-right {
+  text-align: right;
 }
-.homestay-image{
+
+.tour-image {
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px black;
+}
+
+.package-p {
+  color: red;
+}
+.package-image {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.homestay-image {
   height: 300px;
   width: 300px;
 }
-.book{
-    background-image: linear-gradient(rgb(255, 36, 36), rgb(250, 86, 113));
-    border: none;
-    color: white;
-    height: 40px;
-    width: 100px;
-    border-radius: 5px;
-    margin: 2rem;
+.book {
+  background-image: linear-gradient(rgb(255, 36, 36), rgb(250, 86, 113));
+  border: none;
+  color: white;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 2rem;
 }
 
-.book:hover{
-    background-image: linear-gradient(rgb(233, 61, 61), rgb(194, 12, 43));
+.book:hover {
+  background-image: linear-gradient(rgb(233, 61, 61), rgb(194, 12, 43));
 }
-hr{
-    width: 70%;
+hr {
+  width: 70%;
 }
 
 .flip-card {
@@ -170,3 +208,45 @@ hr{
     transform: rotateY(180deg);
     padding: 0.5rem;
   }
+  /* background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 1rem;
+} */
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(0, 0, 0);
+  opacity: 50%;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 0.5rem;
+}
