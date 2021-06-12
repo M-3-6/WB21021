@@ -10,6 +10,30 @@ html {
   width: 100%;
 }
 
+.navbar {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(211, 211, 211);
+  z-index: 3;
+}
+
+.navbar-items {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
 .container {
   position: relative;
   text-align: center;
@@ -23,7 +47,10 @@ html {
   transform: translate(-50%, -50%);
 }
 
-.navbar {
+.cross {
+  position: absolute;
+  top: 0%;
+  left: -5%;
 }
 
 .heroSection {
@@ -67,7 +94,6 @@ html {
   width: 70%;
   margin: 4rem auto;
   margin-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .intro p {
@@ -151,7 +177,7 @@ html {
   bottom: 1.5rem;
   border-radius: 1rem;
   box-shadow: 2px 3px 3px black;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 .eravikulam-image {
@@ -170,4 +196,31 @@ html {
 .anamudi-image:hover,
 .eravikulam-image:hover {
   transform: translateY(-1rem);
+}
+
+.home-stay {
+  text-align: center;
+}
+
+.cards-holder {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 400px;
+}
+
+.card1,
+.card2,
+.card3 {
+  background-color: rgb(25, 90, 63);
+  width: 200px;
+  height: 250px;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.card1:hover {
+  transform: translate(1rem, -1rem);
 }
