@@ -242,6 +242,16 @@ hr {
   color: white;
 }
 
+.packages {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("travelll.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
 .home-stay,
 .packages {
   text-align: center;
