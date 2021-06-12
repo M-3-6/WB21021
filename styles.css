@@ -10,6 +10,10 @@ html {
   width: 100%;
 }
 
+hr {
+  margin: 3rem;
+}
+
 .navbar {
   width: 100%;
   height: 9vh;
@@ -119,10 +123,16 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 3rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("forest1.jpg");
+  background-size: cover;
 }
 
 .attraction-head {
-  font-size: 2rem;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: white;
 }
 
 .tile1,
@@ -137,16 +147,23 @@ html {
 .anamudi,
 .eravikulam {
   background: rgb(198, 255, 207);
-  background: linear-gradient(
+  /* background: linear-gradient(
     360deg,
     rgba(198, 255, 207, 1) 0%,
     rgba(172, 255, 186, 1) 52%,
     rgba(102, 200, 121, 1) 100%
   );
+   */
+  background: rgba(220, 220, 220, 0.6);
+  backdrop-filter: saturate(200%) blur(2px);
   padding: 1rem;
   border-radius: 1rem;
   margin: 0.5rem;
   box-shadow: 1px 2px 5px black;
+}
+
+.photo-gallery h1 {
+  text-align: center;
 }
 
 .munnar-head,
@@ -199,6 +216,17 @@ html {
 }
 
 .home-stay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("resort.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.home-stay,
+.packages {
   text-align: center;
 }
 
@@ -208,19 +236,117 @@ html {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 400px;
+  margin-bottom: 4rem;
 }
 
 .card1,
 .card2,
 .card3 {
-  background-color: rgb(25, 90, 63);
+  background-color: rgb(90, 90, 90);
   width: 200px;
   height: 250px;
   margin: 5px;
-  transition: 0.3s ease;
 }
 
-.card1:hover {
-  transform: translate(1rem, -1rem);
+.innercard1,
+.innercard2,
+.innercard3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url("homestay.jpg");
+  transition: 0.5s ease;
+}
+
+.innercard1:hover,
+.innercard2:hover,
+.innercard3:hover {
+  transform: translate(0.7rem, -0.7rem);
+}
+
+.cards-holder2 {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.pack1,
+.pack2,
+.pack3 {
+  background-color: rgb(90, 90, 90);
+  width: 200px;
+  height: 250px;
+  margin: 5px;
+}
+
+.innerpack1,
+.innerpack2,
+.innerpack3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url("homestay.jpg");
+  transition: 0.5s ease;
+}
+
+.innerpack1:hover,
+.innerpack2:hover,
+.innerpack3:hover {
+  /* transform: translateX(30%);
+  overflow: hidden; */
+  height: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: 250px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000be;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.more {
+  display: block;
+  margin: 1rem auto;
+  background-color: rgb(50, 148, 119);
+  outline: none;
+  border: none;
+  border-radius: 10rem;
+  width: 7rem;
+  height: 3rem;
+  font-size: large;
+  margin-top: 3rem;
 }
